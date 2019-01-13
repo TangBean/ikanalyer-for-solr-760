@@ -10,7 +10,7 @@ import java.util.Map;
 public class IKTokenizerFactory extends TokenizerFactory {
     private boolean useSmart;
 
-    protected IKTokenizerFactory(Map<String, String> args) {
+    public IKTokenizerFactory(Map<String, String> args) {
         super(args);
         useSmart = getBoolean(args, "useSmart", false);
     }
